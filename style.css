@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body{
+    background: url("https://www.joshwcomeau.com/_next/image/?url=%2Fimages%2Fshadow-palette%2Fslopes.png&w=3840&q=75");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    min-width: 400px;
+    max-width: 100%;
+    opacity: 0.95;
+}
+
+.container{
+    position: relative;
+}
+
+/************************************ Counting Clock *********************************** */
+
+.clock{
+    position: relative;
+    /* border: 2px solid white; */
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    color: white;
+    top: 100px;
+    /* margin-top: 10px */
+}
+
+.name-heading{
+    padding: 20px 23px;
+    margin: 0px 0px 20px 0px;
+}
+
+.name-heading h1{
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 65px;
+    user-select: none;
+}
+
+.clock .time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    margin: 0;
+}
+
+.clock .time .hours,
+.clock .time .minutes,
+.clock .time .seconds{
+    /* border: 1px solid white; */
+    font-size: 35px;
+    font-weight: 600;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 40px;
+    box-shadow: rgba(248, 248, 248, 0.35) 0px 5px 15px;
+    letter-spacing: 1.5px;
+    position: relative;
+    user-select: none;
+}
+
+.time .h{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    margin-left: 17.5%;
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 1.2px;
+    user-select: none;
+}
+
+.time .m{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    margin-left: 39%;
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 1.2px;
+    user-select: none;
+}
+
+.time .s{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    margin-left: 62%;
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 1.2px;
+    user-select: none;
+}
+
+
+/************************************ Adding Image in the Web Page *********************************** */
+
+.main_container{
+    position: absolute;
+    right: 19%;
+    top: 7%;
+    
+}
+
+.main_container .image img{
+    width: 240px;
+    height: 380px;
+    border-radius: 15px;
+}
+
+
+/************************************ Counter Clock *********************************** */
+
+.counter-clock{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 600px;
+    color: white;
+    margin-left: 55%;
+    margin-top: 5%;
+}
+
+.counter-clock .counter{
+    padding: 20px 23px;
+    margin: 0px 0px 20px 0px;
+}
+
+.counter h1{
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 35px;
+    user-select: none;
+}
+
+.counter-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    margin: 0;
+    position: relative;
+}
+
+.counter-time .day1,
+.counter-time .hours1,
+.counter-time .minutes1,
+.counter-time .seconds1{
+    /* border: 1px solid white; */
+    font-size: 35px;
+    font-weight: 600;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 40px;
+    box-shadow: rgba(248, 248, 248, 0.35) 0px 5px 15px;
+    letter-spacing: 1.5px;
+    user-select: none;
+}
+
+.counter-time .d-1{
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    margin-left: 3.5%;
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 1.2px;
+    user-select: none;
+}
+
+.counter-time .h-1{
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    margin-left: 27%;
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 1.2px;
+    user-select: none;
+}
+
+.counter-time .m-1{
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    margin-left: 50%;
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 1.2px;
+    user-select: none;
+}
+
+.counter-time .s-1{
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    margin-left: 75%;
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 1.2px;
+}
